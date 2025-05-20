@@ -4,8 +4,12 @@ variable "rafay_config_file" {
   default     = "/Users/user1/.rafay/cli/config.json"
 }
 
-variable "var.agent1" {
+variable "agent1" {
   description = "rafay provider config file for authentication"
-  sensitive   = true
-  default     = var.project1
+  default     = "rafayagent1"
+}
+
+variable "project1" {
+  description = "rafay provider config file for authentication"
+  default     = "rafayproject1"
 }
